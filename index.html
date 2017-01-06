@@ -32,7 +32,39 @@
        <span class="icon-bar"></span>
        <span class="icon-bar"></span>
      </button>
+     </div>
+     <div id="collapsable-nav" class="collapse navbar-collapse"> <!-- Contains the menu items-->
+       <ul id="nav-list" class="nav navbar-nav navbar-right"> <!--Unordered list to put the menu and later to Style it,The 2 nav classes turn it in a nicely done menu and navbar-right pulls the bar to the right-->
+         <li>
+          <a href="menu-categories.html">
+           <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs">Menu</a> <!--Putting a break and its going away when the screen is extra small-->
+           </li>
+           <li>
+             <a href="#">
+             <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">About</a> <!-- they bring an icon font-->
+            </li>
+            <li>
+            <a href="#">
+             <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs">Awards</a>
+             </li>
+            <li id="phone" class="hidden-xs"> <!--Clickable to phone it instantly-->
+              <a href="tel:410-602-5008">
+                <span>410-602-5008</span></a><div>*We Deliver</div>
+           </li>
+       </ul> <!--#Nav list-->
+     </div><!--.collapse .navbar-collapse-->
 </header>
+<div id="call-btn" class="visible-xs">
+  <a class="btn" href="tel:410-602-5008">
+    <span class="glyphicon glyphicon-earphone"></span>410-602-5008
+  </a>
+</div>
+<div id="xs-deliver" class="text-center visible-xs"> *We Deliver</div>
+<div id="main-content" class="container"><!--It contains the main body of our website-->
+  <div class="jumbotron">
+    <img src="images/jumbotron_768.jpg" alt="Picture of restaurant" class="img-responsive visible-xs"><!--The size of the image will change proportionally-->
+  </div>
+</div>
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
